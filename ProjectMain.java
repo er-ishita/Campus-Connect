@@ -1,10 +1,10 @@
 import java.util.*;
+import clubdirectory.Main;
 
 class ProjectMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Timetable timetable = new Timetable();
-        ClubMain club=new ClubMain();
 
         System.out.println("Hello user! Quick registration before we start!");
         System.out.print("Enter your name: ");
@@ -31,12 +31,13 @@ class ProjectMain {
 
             switch (ch) {
                 case 1 -> timetable.openTimetableMenu();
-                case 3 -> club.clubMenu();
+                case 3 -> clubdirectory.Main.main(null);
+
                 case 4 -> {
                     System.out.println("Thank you for using Campus-Connect!");
                     return;
                 }
-                default -> System.out.println("Invalid choice!Please use appropriate choices only...");
+                default -> System.out.println("Invalid choice! Please use appropriate choices only...");
             }
         }
     }
