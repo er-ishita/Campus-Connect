@@ -4,6 +4,7 @@ class ProjectMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Timetable timetable = new Timetable();
+        AssignmentManager assignment= new AssignmentManager();
 
         System.out.println("Hello user! Quick registration before we start!");
         System.out.print("Enter your name: ");
@@ -22,14 +23,16 @@ class ProjectMain {
         while (true) {
             System.out.println("\nCampus Connect Main Menu");
             System.out.println("1. Modify Timetable");
-            System.out.println("2. Exit");
+            System.out.println("2. Assignment Manager");
+            System.out.println("3. Exit");
             System.out.print("Enter your choice: ");
             int ch = sc.nextInt();
             sc.nextLine();
 
             switch (ch) {
                 case 1 -> timetable.openTimetableMenu();
-                case 2 -> {
+                case 2 -> assignment.openAssignmentMenu();
+                case 3 -> {
                     System.out.println("Thank you for using Campus-Connect!");
                     return;
                 }
