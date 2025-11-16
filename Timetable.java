@@ -102,7 +102,7 @@ public class Timetable {
                 throw new ClassTimeException("Classes allowed only between 9 AM - 5 PM on weekdays!");
         }
 
-        if (start < 13 && end > 13)
+        if (start <= 13 && end > 13)
             throw new LunchBreakException("Class cannot overlap lunch break (1 PM - 2 PM)!");
 
         Entry newClass = new Entry(course, faculty, start, duration);
@@ -199,7 +199,7 @@ public class Timetable {
         while (curr != null) {
             if (curr.courseName.equalsIgnoreCase(removeCourse)) {
                 if (prev == null)
-                    week[dayIndex] = curr.next; // removing head
+                    week[dayIndex] = curr.next;
                 else
                     prev.next = curr.next;
 
