@@ -3,19 +3,17 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class ClubMain {
-
+    String id;
+    String name;
+    public ClubMain(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
     private static final DateTimeFormatter FORMATTER =
-            DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+    DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 
     public void clubMenu() {
-
         Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter your student ID: ");
-        String id = sc.nextLine().trim();
-
-        System.out.print("Enter your name: ");
-        String name = sc.nextLine().trim();
 
         Student student = new Student(id, name);
         ClubDirectory directory = new ClubDirectory(student);
