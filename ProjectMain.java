@@ -5,6 +5,11 @@ class ProjectMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Timetable timetable = new Timetable();
+<<<<<<< HEAD
+=======
+        ClubMain club=new ClubMain();
+        AssignmentManager assignment= new AssignmentManager();
+>>>>>>> 3eb216a1b774814ffad830d4d8a9090b50290787
 
         System.out.println("Hello user! Quick registration before we start!");
         System.out.print("Enter your name: ");
