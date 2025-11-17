@@ -3,7 +3,7 @@
 A complete student-portal system built using **Core Java**.
 
 > **Note:**  
-> This project currently has **no backend** and runs fully as a **terminal-based application**.  
+> This project currently has **no backend** and runs as a **terminal-based application** and also provides a ***GUI-using frames***.  
 > A backend/database may be added in future versions.
 
 ---
@@ -11,14 +11,14 @@ A complete student-portal system built using **Core Java**.
 ## 🚀 Overview
 
 Campus-Connect implements a modular student system featuring:
-
+```
 - 🕒 **Timetable Manager** (Custom Linked List + Exception Handling)
 - 📚 **Assignment Manager** (Deadlines, Search, Completion Tracking)
 - 🎭 **Club Directory** (Events, Join/Leave, To-Do Tasks)
 - 👤 **Student Profile Management**
 - 🪟 **Optional AWT GUI** using Frame
 - 🖥️ **Full Terminal Version** using `ProjectMain`
-
+```
 This project demonstrates **OOP**, **Data Structures**, **Exception Handling**, **Java Time API**, and **AWT GUI**.
 
 ---
