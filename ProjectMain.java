@@ -32,7 +32,7 @@ class ProjectMain {
         System.out.println("\nRegistration Complete! ");
         System.out.println("| Enrollment: "+id+"\n| Name: " + name + " \n| Age: " + age + " \n| Course: " + course + " \n| Semester: " + sem);
         while (true) {
-            System.out.println("\nCampus Connect Main Menu");
+            System.out.println("\n\n===============Campus Connect Main Menu=================\n");
             System.out.println("1. Modify Timetable");
             System.out.println("2. Assignment Manager");
             System.out.println("3. Club Directory");
